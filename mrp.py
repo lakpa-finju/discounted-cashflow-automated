@@ -1,4 +1,10 @@
+def calculate_mrp(expected_market_return, risk_free_rate):
+    mrp = expected_market_return - risk_free_rate
+    return mrp
 
-def market_risk_premium(ticker):
-    # Logic to calculate market risk premium
-    pass
+if __name__ == "__main__":
+    # Example values
+    expected_market_return = 0.08  # 8%
+    risk_free_rate = 0.02  # 2%
+    mrp = calculate_mrp(expected_market_return, risk_free_rate)
+    print(f"The Market Risk Premium is {mrp:.2f}")
